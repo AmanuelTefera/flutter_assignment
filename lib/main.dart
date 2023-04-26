@@ -85,32 +85,24 @@ class _MyHomePageState extends State<MyHomePage> {
                   leading: Icon(Icons.dashboard),
                   title: Text("Dashboard"),
                   iconColor: Colors.black,
-                  onTap: () {
-                    // Handle item tap
-                  }),
+                  onTap: () {}),
               ListTile(
-                leading: Icon(Icons.code),
+                leading: Icon(Icons.data_object),
                 title: Text("Item"),
                 iconColor: Colors.black,
-                onTap: () {
-                  // Handle item tap
-                },
+                onTap: () {},
               ),
               ListTile(
                 leading: Icon(Icons.settings),
                 title: Text("Settings"),
                 iconColor: Colors.black,
-                onTap: () {
-                  // Handle settings item tap
-                },
+                onTap: () {},
               ),
               ListTile(
                 leading: Icon(Icons.person),
                 title: Text("Account"),
                 iconColor: Colors.black,
-                onTap: () {
-                  // Handle account item tap
-                },
+                onTap: () {},
               ),
             ],
           ),
