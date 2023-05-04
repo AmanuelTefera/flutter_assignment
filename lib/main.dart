@@ -111,16 +111,23 @@ class _MyHomePageState extends State<MyHomePage> {
           itemCount: items.length,
           itemBuilder: (context, index) {
             final item = items[index];
-            return ListTile(
-              leading: Icon(
-                item['icon'],
-                color: Colors.black,
+            return Container(
+              decoration: BoxDecoration(
+                border: Border.all(color: Colors.grey),
+                borderRadius: BorderRadius.circular(5.0),
               ),
-              title: Text(item['name'], selectionColor: Colors.black),
-              subtitle: Text('\$${item['price']}'),
-              trailing: IconButton(
-                icon: Icon(Icons.edit, color: Colors.black),
-                onPressed: () {},
+              margin: EdgeInsets.all(10.0),
+              child: ListTile(
+                leading: Icon(
+                  item['icon'],
+                  color: Colors.black,
+                ),
+                title: Text(item['name'], selectionColor: Colors.black),
+                subtitle: Text('\$${item['price']}'),
+                trailing: IconButton(
+                  icon: Icon(Icons.edit, color: Colors.black),
+                  onPressed: () {},
+                ),
               ),
             );
           },
